@@ -1,0 +1,29 @@
+.grid5-container {
+    display: grid;
+    padding: 1%;
+    gap: 0.5%;
+    grid-template-columns: 19.2% 19.2% 19.2% 19.2% 19.2%;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
+.grid3-container {
+    display: grid;
+    padding: 1%;
+    gap: 1%;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.grid-item {
+    border: 1px dashed red;
+    padding: 10px;
+    display: inline-grid;
+}
+
+.grid-item p {
+    text-align: center;
+}
+
+.clicked {
+    background-color: rgb(255, 0, 0, .5);
+}
