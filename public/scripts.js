@@ -8,7 +8,7 @@ checks.forEach(checkbox => {
 })
 
 const getPrompts = async () => {
-    const prompts = await fetch("http://localhost:3000/prompts")
+    const prompts = await fetch("https://xmas-bingo-ct-5dca0e1838ff.herokuapp.com/prompts")
     return prompts.json()
 }
 
