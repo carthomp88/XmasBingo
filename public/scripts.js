@@ -19,6 +19,7 @@ const shuffleArray = async (array) => {
         let temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+        if (i === 13) array[i] = "Christmas Cringe"
     }
     return array;
 }
