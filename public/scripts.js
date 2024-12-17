@@ -19,7 +19,6 @@ const shuffleArray = async (array) => {
         let temp = array[i];
         array[i] = array[j];
         array[j] = temp;
-        if (i === 13) array[i] = "Christmas Cringe"
     }
     return array;
 }
@@ -31,6 +30,7 @@ getPrompts().then(prompts => shuffleArray(prompts)).then(list => {
         console.log(id)
         console.log(list[i].prompt)
         const tile = document.getElementById(id);
-        if (tile) tile.innerHTML = list[i-1].prompt;
+        if (tile && i === 13) tile.innerHTML = "Christmas Cringe" 
+        else if (tile) tile.innerHTML = list[i-1].prompt;
     }
 })
